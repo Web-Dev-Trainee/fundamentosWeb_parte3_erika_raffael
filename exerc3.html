@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Capitalizar</title>
+</head>
+
+<body>
+    <h1>Função Capitalizar</h1>
+    <p>Escreva uma função chamada capitalize que receba uma string e retorne essa string com apenas a primeira letra maiúscula. Certifique-se de que ele aceita strings em minúsculas, MAIÚSCULAS ou BoTh.</p>
+
+    <script>
+        function capitalizar(texto) {
+            var palavra = texto.toLowerCase().split(" ");
+            for (var i = 0; i < palavra.length; i++) {
+                var p = palavra[i];
+                palavra[i] = p[0].toUpperCase() + p.slice(1);
+            }
+            return palavra.join(" ");
+        }
+        var a = 'Ana'
+        var b = "BruNo"
+        var c = "caRliTo"
+
+        console.log('-------------------------------------')
+        console.log('Variável antes de passar pela função: ' + a)
+        console.log('Variável depois de passar pela função: ' + capitalizar(a))
+        console.log('-------------------------------------')
+        console.log('Variável antes de passar pela função: ' + b)
+        console.log('Variável depois de passar pela função: ' + capitalizar(b))
+        console.log('-------------------------------------')
+        console.log('Variável antes de passar pela função: ' + c)
+        console.log('Variável depois de passar pela função: ' + capitalizar(c))
+        console.log('-------------------------------------')
+    </script>
+</body>
+
+</html>

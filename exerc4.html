@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Ultima Letra</title>
+</head>
+
+<body>
+    <h1>Função Ultima Letra</h1>
+    <p>Escreva uma função chamada lastLetter que receba uma string e retorne a última letra dessa string:
+        lastLetter("abcd") deveria retornar "d"</p>
+
+
+    <script>
+        function ultimaLetra(texto) {
+            var palavra = texto.substr(-1, 1);
+            return palavra;
+        }
+        var a = 'abcd'
+        console.log(ultimaLetra(a))
+    </script>
+</body>
+
+</html>
